@@ -1,0 +1,703 @@
+/**
+ * RESET ======================================================================
+ */
+
+html {
+    color: #000;
+    background: #000000;
+}
+body {background-image: url(bottom_fade1.png), url(tap_bgtop.png);
+background-repeat: repeat-x, no-repeat;
+background-position: center bottom, center 310px;
+background-size: auto auto, 1500px auto;}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,
+optgroup {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+del,
+ins {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    font-variant: normal;
+    border: 0;
+}
+
+sup {
+    vertical-align: baseline;
+}
+
+sub {
+    vertical-align: baseline;
+}
+
+legend {
+    color: #678;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+a,
+button,
+input[type="submit"],
+input[type="button"] {
+    cursor: pointer;
+}
+
+:focus {
+    outline: 0 none;
+}
+
+/**
+ * GLOBAL ====================================================================
+ */
+
+html {
+    background-image: url('../images/linen.png');
+    background-repeat: repeat;
+}
+
+body {
+    color: #3e3e3e;
+    font-family: 'Verdana', sans-serif;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+h1 img {
+    max-width: 960px;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+a:link,
+a:visited {
+    color: #2786c2;
+}
+
+a:hover,
+a:active {
+    color: #f75342;
+}
+
+h1 a,
+.thumbnails a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clear {
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+}
+
+/**
+ * HEADER ====================================================================
+ */
+
+#main_header {
+    position: relative;
+    margin: 30px auto 60px auto;
+    overflow: hidden;
+}
+
+header h1,
+header h1 a:link,
+header h1 a:visited {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    color: #dedede;
+    text-shadow: #1a1a1a -2px -2px 0px;
+}
+
+#logo {
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+
+.header_text {
+    float: center;
+    overflow: hidden;
+}
+
+.utilities {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/**
+ * SEARCH ====================================================================
+ */
+
+#search_form {
+    margin-bottom: 20px;
+    float: right;
+    position: relative;
+}
+
+#search_field {
+    border: 1px solid #333;
+    color: #aaa;
+    display: block;
+    padding: 4px 10px;
+    width: 300px;
+    -moz-border-radius:     20px;
+    -webkit-border-radius:  20px;
+    border-radius:          20px;
+}
+
+#search_form .focused {
+    color: #333;
+}
+
+#search_form .loading {
+    background-image: url('../images/throbber.gif');
+    background-repeat: no-repeat;
+    background-position: 292px center;
+}
+
+#search_form .submit_btn {
+    display: none;
+}
+
+#no_results,
+.ui-autocomplete {
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 300px;
+    max-height: 278px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -moz-border-radius:     2px;
+    -webkit-border-radius:  2px;
+    border-radius:          2px;
+}
+
+/* IE 6 doesn't support max-height */
+* html .ui-autocomplete {
+    height: 278px;
+}
+
+#no_results {
+    display: none;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    z-index: 5;
+}
+
+.ui-autocomplete li {
+    overflow: hidden;
+}
+
+.ui-autocomplete li a {
+    display: block;
+    padding: 7px;
+    overflow: hidden;
+}
+
+.ui-autocomplete li img {
+    margin-right: 10px;
+    width: 100px;
+    height: 75px;
+    float: left;
+}
+
+.ui-autocomplete li b {
+    color: #333;
+    width: 170px;
+    height: 75px;
+    float: left;
+}
+
+#ui-active-menuitem {
+    background-color: #eee;
+}
+
+/**
+ * SOCIAL ICONS ==============================================================
+ */
+
+#social {
+    float: right;
+    max-width: 300px;
+}
+
+#social li {
+    background-color: #666;
+    margin: 0 0 5px 5px;
+    width: 36px;
+    height: 36px;
+    float: right;
+
+    -moz-border-radius:     36px;
+    -webkit-border-radius:  36px;
+    border-radius:          36px;
+}
+
+#social li,
+#pagination a.next_btn,
+#pagination a.prev_btn {
+
+    filter: alpha(opacity=70) !important; /* IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)" !important; /* IE8 */
+    -moz-opacity:       0.7;
+    -webkit-opacity:    0.7;
+    opacity:            0.7;
+
+    -webkit-transition: opacity 0.25s;
+    -moz-transition:    opacity 0.25s;
+    transition:         opacity 0.25s;
+}
+
+#social li:hover,
+#pagination a:hover.next_btn,
+#pagination a:hover.prev_btn {
+    filter: alpha(opacity=100) !important; /* IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important; /* IE8 */
+    -moz-opacity:       1;
+    -webkit-opacity:    1;
+    opacity:            1;
+}
+
+#social li a {
+    background: transparent url('../images/sprite_social_icons.png?1') no-repeat;
+    display: block;
+    padding: 4px;
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px;
+}
+
+#social .aboutme a      { background-position: 5px  13px    ;}
+#social .behance a      { background-position: 7px  -40px   ;}
+#social .blogger a      { background-position: 8px  -93px   ;}
+#social .deviantart a   { background-position: 4px  -141px  ;}
+#social .digg a         { background-position: 6px  -190px  ;}
+#social .dribbble a     { background-position: 6px  -245px  ;}
+#social .email a        { background-position: 5px  -291px  ;}
+#social .facebook a     { background-position: 10px -343px  ;}
+#social .flavorsme a    { background-position: 7px  -393px  ;}
+#social .flickr a       { background-position: 6px  -438px  ;}
+#social .foursquare a   { background-position: 4px  -492px  ;}
+#social .hi5 a          { background-position: 4px  -542px  ;}
+#social .lastfm a       { background-position: 5px  -590px  ;}
+#social .linkedin a     { background-position: 6px  -645px  ;}
+#social .livejournal a  { background-position: 6px  -695px  ;}
+#social .picasa a       { background-position: 6px  -745px  ;}
+#social .posterous a    { background-position: 10px -793px  ;}
+#social .reddit a       { background-position: 7px  -842px  ;}
+#social .rss a          { background-position: 7px  -893px  ;}
+#social .soundcloud a   { background-position: 4px  -940px  ;}
+#social .tumblr a       { background-position: 9px  -995px  ;}
+#social .twitter a      { background-position: 6px  -1043px ;}
+#social .typepad a      { background-position: 5px  -1090px ;}
+#social .vimeo a        { background-position: 5px  -1142px ;}
+#social .virb a         { background-position: 8px  -1190px ;}
+#social .wordpress a    { background-position: 7px  -1244px ;}
+
+/**
+ * SHARE LINKS ===============================================================
+ */
+
+#share {
+    margin-left: 10px;
+    width: 50px;
+    float: right;
+}
+
+#share li {
+    background: none;
+}
+
+#share li.facebook {
+    padding-top: 7px;
+    width: 50px;
+    overflow: hidden;
+}
+
+/**
+ * CONTENT ===================================================================
+ */
+
+.comments_facebook {
+    margin-top: 30px;
+}
+
+.content {
+    margin-bottom: 60px;
+    overflow: hidden; /* clearfix */
+}
+
+.primary_col {
+    width: 960px;
+}
+
+#description,
+.description p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#description p + p {
+    margin: 15px 0 0 0;
+}
+
+.more {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.info time {
+    display: block;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.comment_link {
+    margin: 20px 0 0 70px;
+}
+
+.navigation {
+    position: relative;
+    overflow: hidden;
+}
+
+/**
+ * PAGINATION ================================================================
+ */
+
+#pagination {
+    margin-top: 10px;
+}
+
+#pages {
+    overflow: hidden;
+}
+
+#pages li {
+    float: left;
+    margin-right: 4px;
+}
+
+#pages li a {
+    display: block;
+    min-width: 13px;
+    background: #ccc;
+    padding: 4px;
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+#pages li a:hover,
+#pages li.active a {
+    background: #999;
+    color: #fff;
+}
+
+#pagination .pager {
+    border: 7px solid #fff;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: -6px;
+    text-indent: -9999px;
+}
+
+#pagination .pager.disabled {
+    visibility: hidden;
+}
+
+#pagination .prev_btn {
+    border-right-color: #ccc;
+    right: 14px;
+
+    -webkit-transition: border-right-color 0.25s;
+    -moz-transition:    border-right-color 0.25s;
+    transition:         border-right-color 0.25s;
+}
+
+#pagination .next_btn {
+    border-left-color: #ccc;
+}
+
+/**
+ * PLAYER ====================================================================
+ */
+
+.player {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.player iframe {
+    display: block;
+}
+
+
+/**
+ * BOX PAGINATION ============================================================
+ */
+
+#linen #pagination .pager {
+    display: none;
+}
+
+/**
+ * LINEN =====================================================================
+ */
+
+#linen #clips li {
+    overflow: hidden;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+    -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, .1);
+    -moz-box-shadow:    1px 1px 0 rgba(255, 255, 255, .1);
+    box-shadow:         1px 1px 0 rgba(255, 255, 255, .1);
+}
+
+#linen #clips li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow:    0 0 0;
+    -box-shadow:        0 0 0;
+}
+
+#linen .player,
+#linen .info {
+    float: left;
+}
+
+#linen .info {
+    position: relative;
+}
+
+#linen .info h2,
+#linen .video_description {
+    padding-left: 70px;
+    width: 290px;
+}
+
+#linen .no_date h2,
+#linen .no_date .video_description {
+    padding-left: 20px;
+}
+
+#linen .video_description {
+    max-height: 420px;
+    overflow: auto;
+    overflow-x: hidden;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.video_description p + p {
+    margin: 15px 0 0 0;
+}
+
+#linen .info time {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0 2px 10px 2px;
+    width: 46px;
+    color: #000;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, .4) 0px 1px 0px;
+}
+
+#linen .info time b {
+    display: block;
+    padding-bottom: 5px;
+    position: relative;
+    top: -5px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#linen .info h2 {
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+#linen .info h2,
+#linen .video_description {
+    width: 288px;
+}
+
+#linen .video_page .info h2,
+#linen .video_page .video_description {
+    padding-left: 0;
+    width: auto;
+}
+
+#linen .video_page .video_description {
+    width: auto;
+    max-height: auto;
+    overflow: auto;
+    margin-top: 30px;
+}
+
+#linen .video_page h2 {
+    margin-top: 20px;
+}
+
+#linen .video_page .info time {
+    position: static;
+    background: transparent;
+    padding: 0;
+    width: auto;
+    color: #fff;
+    text-align: left;
+}
+
+#linen .video_page .info time b {
+    display: inline;
+    position: static;
+    padding: 0;
+    font-size: 13px;
+}
+
+#linen .video_page .player,
+#linen .video_page .info {
+    float: none;
+}
+
+.breadcrumbs {
+    margin-bottom: 18px;
+    font-size: 12px;
+}
